@@ -1,7 +1,7 @@
 mod client;
 mod error;
-mod operation;
 pub mod models;
+mod operation;
 mod operations_generated;
 pub mod services_generated;
 

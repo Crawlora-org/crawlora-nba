@@ -53,7 +53,11 @@ pub struct ModelNbaArticle {
     pub status: Option<String>,
     #[serde(rename = "title", default, skip_serializing_if = "Option::is_none")]
     pub title: Option<String>,
-    #[serde(rename = "word_count", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "word_count",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub word_count: Option<ModelNbaFlexInt>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -73,17 +77,37 @@ pub struct ModelNbaArticleCategory {
 pub struct ModelNbaBoxPlayer {
     #[serde(rename = "assists", default, skip_serializing_if = "Option::is_none")]
     pub assists: Option<ModelNbaFlexInt>,
-    #[serde(rename = "family_name", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "family_name",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub family_name: Option<String>,
-    #[serde(rename = "field_goals_made", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "field_goals_made",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub field_goals_made: Option<ModelNbaFlexInt>,
-    #[serde(rename = "first_name", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "first_name",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub first_name: Option<String>,
-    #[serde(rename = "jersey_num", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "jersey_num",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub jersey_num: Option<String>,
     #[serde(rename = "minutes", default, skip_serializing_if = "Option::is_none")]
     pub minutes: Option<String>,
-    #[serde(rename = "name_initial", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "name_initial",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub name_initial: Option<String>,
     #[serde(rename = "person_id", default, skip_serializing_if = "Option::is_none")]
     pub person_id: Option<ModelNbaFlexInt>,
@@ -105,13 +129,21 @@ pub struct ModelNbaBoxScoreResponse {
     pub away_team: Option<ModelNbaBoxTeam>,
     #[serde(rename = "count", default, skip_serializing_if = "Option::is_none")]
     pub count: Option<i64>,
-    #[serde(rename = "fetched_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fetched_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub fetched_at: Option<String>,
     #[serde(rename = "game_id", default, skip_serializing_if = "Option::is_none")]
     pub game_id: Option<String>,
     #[serde(rename = "home_team", default, skip_serializing_if = "Option::is_none")]
     pub home_team: Option<ModelNbaBoxTeam>,
-    #[serde(rename = "source_url", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "source_url",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub source_url: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -123,15 +155,27 @@ pub struct ModelNbaBoxScoreStatsResponse {
     pub away_team: Option<ModelNbaRichStatTeam>,
     #[serde(rename = "count", default, skip_serializing_if = "Option::is_none")]
     pub count: Option<i64>,
-    #[serde(rename = "fetched_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fetched_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub fetched_at: Option<String>,
     #[serde(rename = "game_id", default, skip_serializing_if = "Option::is_none")]
     pub game_id: Option<String>,
     #[serde(rename = "home_team", default, skip_serializing_if = "Option::is_none")]
     pub home_team: Option<ModelNbaRichStatTeam>,
-    #[serde(rename = "source_url", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "source_url",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub source_url: Option<String>,
-    #[serde(rename = "stat_group", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "stat_group",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub stat_group: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -145,7 +189,11 @@ pub struct ModelNbaBoxTeam {
     pub team_id: Option<ModelNbaFlexInt>,
     #[serde(rename = "team_name", default, skip_serializing_if = "Option::is_none")]
     pub team_name: Option<String>,
-    #[serde(rename = "team_tricode", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "team_tricode",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub team_tricode: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -165,19 +213,43 @@ pub struct ModelNbaDetailTeam {
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct ModelNbaEnumsData {
-    #[serde(rename = "ahead_behinds", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "ahead_behinds",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub ahead_behinds: Option<Vec<String>>,
     #[serde(rename = "blocked", default, skip_serializing_if = "Option::is_none")]
     pub blocked: Option<Vec<String>>,
-    #[serde(rename = "clutch_times", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "clutch_times",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub clutch_times: Option<Vec<String>>,
-    #[serde(rename = "defense_categories", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "defense_categories",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub defense_categories: Option<Vec<String>>,
-    #[serde(rename = "game_date_format", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_date_format",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_date_format: Option<String>,
-    #[serde(rename = "league_ids", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "league_ids",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub league_ids: Option<Vec<String>>,
-    #[serde(rename = "measure_types", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "measure_types",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub measure_types: Option<Vec<String>>,
     #[serde(rename = "notes", default, skip_serializing_if = "Option::is_none")]
     pub notes: Option<Vec<String>>,
@@ -185,15 +257,35 @@ pub struct ModelNbaEnumsData {
     pub per_modes: Option<Vec<String>>,
     #[serde(rename = "scopes", default, skip_serializing_if = "Option::is_none")]
     pub scopes: Option<Vec<String>>,
-    #[serde(rename = "season_format", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "season_format",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub season_format: Option<String>,
-    #[serde(rename = "season_types", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "season_types",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub season_types: Option<Vec<String>>,
-    #[serde(rename = "stat_categories", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "stat_categories",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub stat_categories: Option<Vec<String>>,
-    #[serde(rename = "stat_types", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "stat_types",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub stat_types: Option<Vec<String>>,
-    #[serde(rename = "verified_on", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "verified_on",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub verified_on: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -205,9 +297,17 @@ pub struct ModelNbaEnumsResponse {
     pub count: Option<i64>,
     #[serde(rename = "data", default, skip_serializing_if = "Option::is_none")]
     pub data: Option<ModelNbaEnumsData>,
-    #[serde(rename = "fetched_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fetched_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub fetched_at: Option<String>,
-    #[serde(rename = "source_url", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "source_url",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub source_url: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -225,7 +325,11 @@ pub struct ModelNbaFlexInt {
 pub struct ModelNbaGame {
     #[serde(rename = "away_team", default, skip_serializing_if = "Option::is_none")]
     pub away_team: Option<ModelNbaGameSide>,
-    #[serde(rename = "game_clock", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_clock",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_clock: Option<String>,
     #[serde(rename = "game_code", default, skip_serializing_if = "Option::is_none")]
     pub game_code: Option<String>,
@@ -233,11 +337,23 @@ pub struct ModelNbaGame {
     pub game_et: Option<String>,
     #[serde(rename = "game_id", default, skip_serializing_if = "Option::is_none")]
     pub game_id: Option<String>,
-    #[serde(rename = "game_status", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_status",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_status: Option<ModelNbaFlexInt>,
-    #[serde(rename = "game_status_text", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_status_text",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_status_text: Option<String>,
-    #[serde(rename = "game_time_utc", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_time_utc",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_time_utc: Option<String>,
     #[serde(rename = "home_team", default, skip_serializing_if = "Option::is_none")]
     pub home_team: Option<ModelNbaGameSide>,
@@ -251,13 +367,21 @@ pub struct ModelNbaGame {
 pub struct ModelNbaGameDetail {
     #[serde(rename = "arena", default, skip_serializing_if = "Option::is_none")]
     pub arena: Option<ModelNbaArena>,
-    #[serde(rename = "attendance", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "attendance",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub attendance: Option<ModelNbaFlexInt>,
     #[serde(rename = "away_team", default, skip_serializing_if = "Option::is_none")]
     pub away_team: Option<ModelNbaDetailTeam>,
     #[serde(rename = "duration", default, skip_serializing_if = "Option::is_none")]
     pub duration: Option<String>,
-    #[serde(rename = "game_clock", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_clock",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_clock: Option<String>,
     #[serde(rename = "game_code", default, skip_serializing_if = "Option::is_none")]
     pub game_code: Option<String>,
@@ -265,21 +389,49 @@ pub struct ModelNbaGameDetail {
     pub game_et: Option<String>,
     #[serde(rename = "game_id", default, skip_serializing_if = "Option::is_none")]
     pub game_id: Option<String>,
-    #[serde(rename = "game_label", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_label",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_label: Option<String>,
-    #[serde(rename = "game_status", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_status",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_status: Option<ModelNbaFlexInt>,
-    #[serde(rename = "game_status_text", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_status_text",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_status_text: Option<String>,
-    #[serde(rename = "game_sub_label", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_sub_label",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_sub_label: Option<String>,
-    #[serde(rename = "game_time_utc", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "game_time_utc",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub game_time_utc: Option<String>,
     #[serde(rename = "home_team", default, skip_serializing_if = "Option::is_none")]
     pub home_team: Option<ModelNbaDetailTeam>,
-    #[serde(rename = "if_necessary", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "if_necessary",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub if_necessary: Option<bool>,
-    #[serde(rename = "is_neutral", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "is_neutral",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub is_neutral: Option<bool>,
     #[serde(rename = "officials", default, skip_serializing_if = "Option::is_none")]
     pub officials: Option<Vec<ModelNbaOfficial>>,
@@ -287,9 +439,17 @@ pub struct ModelNbaGameDetail {
     pub period: Option<ModelNbaFlexInt>,
     #[serde(rename = "sellout", default, skip_serializing_if = "Option::is_none")]
     pub sellout: Option<ModelNbaFlexInt>,
-    #[serde(rename = "series_game_number", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "series_game_number",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub series_game_number: Option<String>,
-    #[serde(rename = "series_text", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "series_text",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub series_text: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -299,11 +459,19 @@ pub struct ModelNbaGameDetail {
 pub struct ModelNbaGameDetailResponse {
     #[serde(rename = "count", default, skip_serializing_if = "Option::is_none")]
     pub count: Option<i64>,
-    #[serde(rename = "fetched_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fetched_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub fetched_at: Option<String>,
     #[serde(rename = "game", default, skip_serializing_if = "Option::is_none")]
     pub game: Option<ModelNbaGameDetail>,
-    #[serde(rename = "source_url", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "source_url",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub source_url: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -321,7 +489,11 @@ pub struct ModelNbaGameSide {
     pub team_id: Option<ModelNbaFlexInt>,
     #[serde(rename = "team_name", default, skip_serializing_if = "Option::is_none")]
     pub team_name: Option<String>,
-    #[serde(rename = "team_tricode", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "team_tricode",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub team_tricode: Option<String>,
     #[serde(rename = "wins", default, skip_serializing_if = "Option::is_none")]
     pub wins: Option<ModelNbaFlexInt>,
@@ -333,11 +505,19 @@ pub struct ModelNbaGameSide {
 pub struct ModelNbaGamesResponse {
     #[serde(rename = "count", default, skip_serializing_if = "Option::is_none")]
     pub count: Option<i64>,
-    #[serde(rename = "fetched_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fetched_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub fetched_at: Option<String>,
     #[serde(rename = "games", default, skip_serializing_if = "Option::is_none")]
     pub games: Option<Vec<ModelNbaGame>>,
-    #[serde(rename = "source_url", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "source_url",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub source_url: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -349,9 +529,17 @@ pub struct ModelNbaNewsResponse {
     pub articles: Option<Vec<ModelNbaArticle>>,
     #[serde(rename = "count", default, skip_serializing_if = "Option::is_none")]
     pub count: Option<i64>,
-    #[serde(rename = "fetched_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fetched_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub fetched_at: Option<String>,
-    #[serde(rename = "source_url", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "source_url",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub source_url: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -359,15 +547,31 @@ pub struct ModelNbaNewsResponse {
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct ModelNbaOfficial {
-    #[serde(rename = "family_name", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "family_name",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub family_name: Option<String>,
-    #[serde(rename = "first_name", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "first_name",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub first_name: Option<String>,
-    #[serde(rename = "jersey_num", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "jersey_num",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub jersey_num: Option<String>,
     #[serde(rename = "name", default, skip_serializing_if = "Option::is_none")]
     pub name: Option<String>,
-    #[serde(rename = "name_initial", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "name_initial",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub name_initial: Option<String>,
     #[serde(rename = "person_id", default, skip_serializing_if = "Option::is_none")]
     pub person_id: Option<ModelNbaFlexInt>,
@@ -379,7 +583,11 @@ pub struct ModelNbaOfficial {
 pub struct ModelNbaPeriodScore {
     #[serde(rename = "period", default, skip_serializing_if = "Option::is_none")]
     pub period: Option<ModelNbaFlexInt>,
-    #[serde(rename = "period_type", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "period_type",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub period_type: Option<String>,
     #[serde(rename = "score", default, skip_serializing_if = "Option::is_none")]
     pub score: Option<ModelNbaFlexInt>,
@@ -389,37 +597,81 @@ pub struct ModelNbaPeriodScore {
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct ModelNbaPlayAction {
-    #[serde(rename = "action_number", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "action_number",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub action_number: Option<ModelNbaFlexInt>,
-    #[serde(rename = "action_type", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "action_type",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub action_type: Option<String>,
     #[serde(rename = "clock", default, skip_serializing_if = "Option::is_none")]
     pub clock: Option<String>,
-    #[serde(rename = "description", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "description",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub description: Option<String>,
-    #[serde(rename = "is_field_goal", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "is_field_goal",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub is_field_goal: Option<ModelNbaFlexInt>,
     #[serde(rename = "period", default, skip_serializing_if = "Option::is_none")]
     pub period: Option<ModelNbaFlexInt>,
     #[serde(rename = "person_id", default, skip_serializing_if = "Option::is_none")]
     pub person_id: Option<ModelNbaFlexInt>,
-    #[serde(rename = "player_name", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "player_name",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub player_name: Option<String>,
-    #[serde(rename = "points_total", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "points_total",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub points_total: Option<ModelNbaFlexInt>,
-    #[serde(rename = "score_away", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "score_away",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub score_away: Option<ModelNbaFlexInt>,
-    #[serde(rename = "score_home", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "score_home",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub score_home: Option<ModelNbaFlexInt>,
-    #[serde(rename = "shot_result", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "shot_result",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub shot_result: Option<String>,
-    #[serde(rename = "shot_value", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "shot_value",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub shot_value: Option<ModelNbaFlexInt>,
     #[serde(rename = "sub_type", default, skip_serializing_if = "Option::is_none")]
     pub sub_type: Option<String>,
     #[serde(rename = "team_id", default, skip_serializing_if = "Option::is_none")]
     pub team_id: Option<ModelNbaFlexInt>,
-    #[serde(rename = "team_tricode", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "team_tricode",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub team_tricode: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -431,13 +683,25 @@ pub struct ModelNbaPlayByPlayResponse {
     pub actions: Option<Vec<ModelNbaPlayAction>>,
     #[serde(rename = "count", default, skip_serializing_if = "Option::is_none")]
     pub count: Option<i64>,
-    #[serde(rename = "fetched_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fetched_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub fetched_at: Option<String>,
     #[serde(rename = "game_id", default, skip_serializing_if = "Option::is_none")]
     pub game_id: Option<String>,
-    #[serde(rename = "source_url", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "source_url",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub source_url: Option<String>,
-    #[serde(rename = "video_available", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "video_available",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub video_available: Option<ModelNbaFlexInt>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -445,19 +709,39 @@ pub struct ModelNbaPlayByPlayResponse {
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct ModelNbaPlayerStatLine {
-    #[serde(rename = "family_name", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "family_name",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub family_name: Option<String>,
-    #[serde(rename = "first_name", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "first_name",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub first_name: Option<String>,
-    #[serde(rename = "jersey_num", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "jersey_num",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub jersey_num: Option<String>,
-    #[serde(rename = "name_initial", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "name_initial",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub name_initial: Option<String>,
     #[serde(rename = "person_id", default, skip_serializing_if = "Option::is_none")]
     pub person_id: Option<ModelNbaFlexInt>,
     #[serde(rename = "position", default, skip_serializing_if = "Option::is_none")]
     pub position: Option<String>,
-    #[serde(rename = "statistics", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "statistics",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub statistics: Option<std::collections::BTreeMap<String, serde_json::Value>>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -471,7 +755,11 @@ pub struct ModelNbaRichStatTeam {
     pub team_id: Option<ModelNbaFlexInt>,
     #[serde(rename = "team_name", default, skip_serializing_if = "Option::is_none")]
     pub team_name: Option<String>,
-    #[serde(rename = "team_tricode", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "team_tricode",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub team_tricode: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -483,7 +771,11 @@ pub type ModelNbaRow = std::collections::BTreeMap<String, serde_json::Value>;
 pub struct ModelNbaScoreboardResponse {
     #[serde(rename = "count", default, skip_serializing_if = "Option::is_none")]
     pub count: Option<i64>,
-    #[serde(rename = "fetched_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fetched_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub fetched_at: Option<String>,
     #[serde(rename = "game_date", default, skip_serializing_if = "Option::is_none")]
     pub game_date: Option<String>,
@@ -491,9 +783,17 @@ pub struct ModelNbaScoreboardResponse {
     pub games: Option<Vec<ModelNbaGame>>,
     #[serde(rename = "league_id", default, skip_serializing_if = "Option::is_none")]
     pub league_id: Option<String>,
-    #[serde(rename = "league_name", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "league_name",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub league_name: Option<String>,
-    #[serde(rename = "source_url", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "source_url",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub source_url: Option<String>,
     #[serde(flatten)]
     pub additional: BTreeMap<String, Value>,
@@ -515,9 +815,17 @@ pub struct ModelNbaTable {
 pub struct ModelNbaTablesResponse {
     #[serde(rename = "count", default, skip_serializing_if = "Option::is_none")]
     pub count: Option<i64>,
-    #[serde(rename = "fetched_at", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "fetched_at",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub fetched_at: Option<String>,
-    #[serde(rename = "source_url", default, skip_serializing_if = "Option::is_none")]
+    #[serde(
+        rename = "source_url",
+        default,
+        skip_serializing_if = "Option::is_none"
+    )]
     pub source_url: Option<String>,
     #[serde(rename = "tables", default, skip_serializing_if = "Option::is_none")]
     pub tables: Option<Vec<ModelNbaTable>>,
