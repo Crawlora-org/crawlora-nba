@@ -1,0 +1,6255 @@
+{
+  "platform": "nba",
+  "operationCount": 70,
+  "operationIds": [
+    "nba-box-score",
+    "nba-box-score-advanced",
+    "nba-box-score-defensive",
+    "nba-box-score-four-factors",
+    "nba-box-score-misc",
+    "nba-box-score-player-track",
+    "nba-box-score-scoring",
+    "nba-box-score-summary",
+    "nba-box-score-usage",
+    "nba-common-all-players",
+    "nba-draft-combine-anthro",
+    "nba-enums",
+    "nba-franchise-history",
+    "nba-game-detail",
+    "nba-games",
+    "nba-homepage-leaders",
+    "nba-homepage-v2",
+    "nba-hustle-player",
+    "nba-hustle-stats",
+    "nba-hustle-team",
+    "nba-league-game-log",
+    "nba-lineup-shot-chart",
+    "nba-lineups",
+    "nba-news",
+    "nba-opp-pt-shot",
+    "nba-play-by-play",
+    "nba-player-awards",
+    "nba-player-bio-stats",
+    "nba-player-career-stats",
+    "nba-player-clutch",
+    "nba-player-compare",
+    "nba-player-dash-by-clutch",
+    "nba-player-dash-by-game-splits",
+    "nba-player-dash-by-last-n-games",
+    "nba-player-dash-by-opponent",
+    "nba-player-dash-pt-pass",
+    "nba-player-dash-pt-reb",
+    "nba-player-dash-pt-shots",
+    "nba-player-game-logs",
+    "nba-player-info",
+    "nba-player-profile-v2",
+    "nba-player-pt-shot",
+    "nba-player-stats",
+    "nba-player-streak-finder",
+    "nba-players",
+    "nba-playoff-picture",
+    "nba-playoff-series",
+    "nba-pt-defend",
+    "nba-pt-stats",
+    "nba-scoreboard",
+    "nba-shot-chart",
+    "nba-standings",
+    "nba-synergy-play-types",
+    "nba-team-dash-by-clutch",
+    "nba-team-dash-by-game-splits",
+    "nba-team-dash-by-last-n-games",
+    "nba-team-dash-by-opponent",
+    "nba-team-dash-pt-pass",
+    "nba-team-dash-pt-reb",
+    "nba-team-dash-pt-shots",
+    "nba-team-details",
+    "nba-team-game-logs",
+    "nba-team-info-common",
+    "nba-team-on-off",
+    "nba-team-pt-shot",
+    "nba-team-roster",
+    "nba-team-shot-locations",
+    "nba-team-stats",
+    "nba-team-stats-leaders",
+    "nba-team-years"
+  ],
+  "methods": {
+    "box_score": "nba-box-score",
+    "box_score_advanced": "nba-box-score-advanced",
+    "box_score_defensive": "nba-box-score-defensive",
+    "box_score_four_factors": "nba-box-score-four-factors",
+    "box_score_misc": "nba-box-score-misc",
+    "box_score_player_track": "nba-box-score-player-track",
+    "box_score_scoring": "nba-box-score-scoring",
+    "box_score_summary": "nba-box-score-summary",
+    "box_score_usage": "nba-box-score-usage",
+    "common_all_players": "nba-common-all-players",
+    "draft_combine_anthro": "nba-draft-combine-anthro",
+    "enums": "nba-enums",
+    "franchise_history": "nba-franchise-history",
+    "game_detail": "nba-game-detail",
+    "games": "nba-games",
+    "homepage_leaders": "nba-homepage-leaders",
+    "homepage_v2": "nba-homepage-v2",
+    "hustle_player": "nba-hustle-player",
+    "hustle_stats": "nba-hustle-stats",
+    "hustle_team": "nba-hustle-team",
+    "league_game_log": "nba-league-game-log",
+    "lineup_shot_chart": "nba-lineup-shot-chart",
+    "lineups": "nba-lineups",
+    "news": "nba-news",
+    "opp_pt_shot": "nba-opp-pt-shot",
+    "play_by_play": "nba-play-by-play",
+    "player_awards": "nba-player-awards",
+    "player_bio_stats": "nba-player-bio-stats",
+    "player_career_stats": "nba-player-career-stats",
+    "player_clutch": "nba-player-clutch",
+    "player_compare": "nba-player-compare",
+    "player_dash_by_clutch": "nba-player-dash-by-clutch",
+    "player_dash_by_game_splits": "nba-player-dash-by-game-splits",
+    "player_dash_by_last_n_games": "nba-player-dash-by-last-n-games",
+    "player_dash_by_opponent": "nba-player-dash-by-opponent",
+    "player_dash_pt_pass": "nba-player-dash-pt-pass",
+    "player_dash_pt_reb": "nba-player-dash-pt-reb",
+    "player_dash_pt_shots": "nba-player-dash-pt-shots",
+    "player_game_logs": "nba-player-game-logs",
+    "player_info": "nba-player-info",
+    "player_profile_v2": "nba-player-profile-v2",
+    "player_pt_shot": "nba-player-pt-shot",
+    "player_stats": "nba-player-stats",
+    "player_streak_finder": "nba-player-streak-finder",
+    "players": "nba-players",
+    "playoff_picture": "nba-playoff-picture",
+    "playoff_series": "nba-playoff-series",
+    "pt_defend": "nba-pt-defend",
+    "pt_stats": "nba-pt-stats",
+    "scoreboard": "nba-scoreboard",
+    "shot_chart": "nba-shot-chart",
+    "standings": "nba-standings",
+    "synergy_play_types": "nba-synergy-play-types",
+    "team_dash_by_clutch": "nba-team-dash-by-clutch",
+    "team_dash_by_game_splits": "nba-team-dash-by-game-splits",
+    "team_dash_by_last_n_games": "nba-team-dash-by-last-n-games",
+    "team_dash_by_opponent": "nba-team-dash-by-opponent",
+    "team_dash_pt_pass": "nba-team-dash-pt-pass",
+    "team_dash_pt_reb": "nba-team-dash-pt-reb",
+    "team_dash_pt_shots": "nba-team-dash-pt-shots",
+    "team_details": "nba-team-details",
+    "team_game_logs": "nba-team-game-logs",
+    "team_info_common": "nba-team-info-common",
+    "team_on_off": "nba-team-on-off",
+    "team_pt_shot": "nba-team-pt-shot",
+    "team_roster": "nba-team-roster",
+    "team_shot_locations": "nba-team-shot-locations",
+    "team_stats": "nba-team-stats",
+    "team_stats_leaders": "nba-team-stats-leaders",
+    "team_years": "nba-team-years"
+  },
+  "operations": {
+    "nba-box-score": {
+      "id": "nba-box-score",
+      "method": "GET",
+      "path": "/nba/box-score",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "start_period",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "end_period",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "First period to include, 0 to 14; 0 means from the start example(0)",
+          "in": "query",
+          "name": "start_period",
+          "type": "integer",
+          "x-example": 0
+        },
+        {
+          "description": "Last period to include, 0 to 14; 0 means through the end example(14)",
+          "in": "query",
+          "name": "end_period",
+          "type": "integer",
+          "x-example": 14
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-box-score-advanced": {
+      "id": "nba-box-score-advanced",
+      "method": "GET",
+      "path": "/nba/box-score-advanced",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "start_period",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "end_period",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "First period to include, 0 to 14; 0 means from the start",
+          "in": "query",
+          "name": "start_period",
+          "type": "integer",
+          "x-example": 0
+        },
+        {
+          "description": "Last period to include, 0 to 14; 0 means through the end",
+          "in": "query",
+          "name": "end_period",
+          "type": "integer",
+          "x-example": 14
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-box-score-defensive": {
+      "id": "nba-box-score-defensive",
+      "method": "GET",
+      "path": "/nba/box-score-defensive",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-box-score-four-factors": {
+      "id": "nba-box-score-four-factors",
+      "method": "GET",
+      "path": "/nba/box-score-four-factors",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "start_period",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "end_period",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "First period to include, 0 to 14; 0 means from the start",
+          "in": "query",
+          "name": "start_period",
+          "type": "integer",
+          "x-example": 0
+        },
+        {
+          "description": "Last period to include, 0 to 14; 0 means through the end",
+          "in": "query",
+          "name": "end_period",
+          "type": "integer",
+          "x-example": 14
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-box-score-misc": {
+      "id": "nba-box-score-misc",
+      "method": "GET",
+      "path": "/nba/box-score-misc",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "start_period",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "end_period",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "First period to include, 0 to 14; 0 means from the start",
+          "in": "query",
+          "name": "start_period",
+          "type": "integer",
+          "x-example": 0
+        },
+        {
+          "description": "Last period to include, 0 to 14; 0 means through the end",
+          "in": "query",
+          "name": "end_period",
+          "type": "integer",
+          "x-example": 14
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-box-score-player-track": {
+      "id": "nba-box-score-player-track",
+      "method": "GET",
+      "path": "/nba/box-score-player-track",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-box-score-scoring": {
+      "id": "nba-box-score-scoring",
+      "method": "GET",
+      "path": "/nba/box-score-scoring",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "start_period",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "end_period",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "First period to include, 0 to 14; 0 means from the start",
+          "in": "query",
+          "name": "start_period",
+          "type": "integer",
+          "x-example": 0
+        },
+        {
+          "description": "Last period to include, 0 to 14; 0 means through the end",
+          "in": "query",
+          "name": "end_period",
+          "type": "integer",
+          "x-example": 14
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-box-score-summary": {
+      "id": "nba-box-score-summary",
+      "method": "GET",
+      "path": "/nba/box-score-summary",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-box-score-usage": {
+      "id": "nba-box-score-usage",
+      "method": "GET",
+      "path": "/nba/box-score-usage",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "start_period",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "end_period",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "First period to include, 0 to 14; 0 means from the start",
+          "in": "query",
+          "name": "start_period",
+          "type": "integer",
+          "x-example": 0
+        },
+        {
+          "description": "Last period to include, 0 to 14; 0 means through the end",
+          "in": "query",
+          "name": "end_period",
+          "type": "integer",
+          "x-example": 14
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-common-all-players": {
+      "id": "nba-common-all-players",
+      "method": "GET",
+      "path": "/nba/common-all-players",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "is_only_current_season",
+          "in": "query",
+          "type": "boolean"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "When true, only players on a current roster are returned",
+          "in": "query",
+          "name": "is_only_current_season",
+          "type": "boolean"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-draft-combine-anthro": {
+      "id": "nba-draft-combine-anthro",
+      "method": "GET",
+      "path": "/nba/draft-combine-anthro",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "season_year",
+          "in": "query",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Four-digit draft year",
+          "in": "query",
+          "name": "season_year",
+          "required": true,
+          "type": "string",
+          "x-example": "2025"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-enums": {
+      "id": "nba-enums",
+      "method": "GET",
+      "path": "/nba/enums",
+      "pathParams": [],
+      "queryParams": [],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-franchise-history": {
+      "id": "nba-franchise-history",
+      "method": "GET",
+      "path": "/nba/franchise-history",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Optional team id from nba-standings; narrows the history to that franchise",
+          "in": "query",
+          "name": "team_id",
+          "type": "integer",
+          "x-example": 1610612741
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-game-detail": {
+      "id": "nba-game-detail",
+      "method": "GET",
+      "path": "/nba/game-detail",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-games": {
+      "id": "nba-games",
+      "method": "GET",
+      "path": "/nba/games",
+      "pathParams": [],
+      "queryParams": [],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-homepage-leaders": {
+      "id": "nba-homepage-leaders",
+      "method": "GET",
+      "path": "/nba/homepage-leaders",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "stat_category",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Points",
+            "Rebounds"
+          ]
+        },
+        {
+          "name": "player_or_team",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Team"
+          ]
+        },
+        {
+          "name": "player_scope",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "game_scope",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Season"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Leader category",
+          "enum": [
+            "Points",
+            "Rebounds"
+          ],
+          "in": "query",
+          "name": "stat_category",
+          "type": "string",
+          "x-example": "Points"
+        },
+        {
+          "description": "Subject",
+          "enum": [
+            "Team"
+          ],
+          "in": "query",
+          "name": "player_or_team",
+          "type": "string",
+          "x-example": "Team"
+        },
+        {
+          "description": "Player pool",
+          "in": "query",
+          "name": "player_scope",
+          "type": "string",
+          "x-example": "All Players"
+        },
+        {
+          "description": "Game window",
+          "enum": [
+            "Season"
+          ],
+          "in": "query",
+          "name": "game_scope",
+          "type": "string",
+          "x-example": "Season"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-homepage-v2": {
+      "id": "nba-homepage-v2",
+      "method": "GET",
+      "path": "/nba/homepage-v2",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "game_scope",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Season"
+          ]
+        },
+        {
+          "name": "player_scope",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "player_or_team",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Player"
+          ]
+        },
+        {
+          "name": "stat_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Traditional"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Game window; only Season is verified",
+          "enum": [
+            "Season"
+          ],
+          "in": "query",
+          "name": "game_scope",
+          "type": "string",
+          "x-example": "Season"
+        },
+        {
+          "description": "Player pool; only All Players is verified",
+          "in": "query",
+          "name": "player_scope",
+          "type": "string",
+          "x-example": "All Players"
+        },
+        {
+          "description": "Subject; only Player is verified here",
+          "enum": [
+            "Player"
+          ],
+          "in": "query",
+          "name": "player_or_team",
+          "type": "string",
+          "x-example": "Player"
+        },
+        {
+          "description": "Statistic family; only Traditional is verified",
+          "enum": [
+            "Traditional"
+          ],
+          "in": "query",
+          "name": "stat_type",
+          "type": "string",
+          "x-example": "Traditional"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-hustle-player": {
+      "id": "nba-hustle-player",
+      "method": "GET",
+      "path": "/nba/hustle-player",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-hustle-stats": {
+      "id": "nba-hustle-stats",
+      "method": "GET",
+      "path": "/nba/hustle-stats",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-hustle-team": {
+      "id": "nba-hustle-team",
+      "method": "GET",
+      "path": "/nba/hustle-team",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional aggregation.",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-league-game-log": {
+      "id": "nba-league-game-log",
+      "method": "GET",
+      "path": "/nba/league-game-log",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "direction",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "DESC"
+          ]
+        },
+        {
+          "name": "player_or_team",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "T"
+          ]
+        },
+        {
+          "name": "sorter",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "DATE"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Ordering; ASC or DESC",
+          "enum": [
+            "DESC"
+          ],
+          "in": "query",
+          "name": "direction",
+          "type": "string",
+          "x-example": "DESC"
+        },
+        {
+          "description": "T for one row per team, P for one row per player",
+          "enum": [
+            "T"
+          ],
+          "in": "query",
+          "name": "player_or_team",
+          "type": "string",
+          "x-example": "T"
+        },
+        {
+          "description": "Sort key; only DATE is verified",
+          "enum": [
+            "DATE"
+          ],
+          "in": "query",
+          "name": "sorter",
+          "type": "string",
+          "x-example": "DATE"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-lineup-shot-chart": {
+      "id": "nba-lineup-shot-chart",
+      "method": "GET",
+      "path": "/nba/lineup-shot-chart",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "context_measure",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "FGA",
+            "FG_PCT"
+          ]
+        },
+        {
+          "name": "group_quantity",
+          "in": "query",
+          "type": "integer",
+          "enum": [
+            "5"
+          ]
+        },
+        {
+          "name": "period",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Team id from nba-standings",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1610612738
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Shot-chart base event",
+          "enum": [
+            "FGA",
+            "FG_PCT"
+          ],
+          "in": "query",
+          "name": "context_measure",
+          "type": "string",
+          "x-example": "FG_PCT"
+        },
+        {
+          "description": "Lineup size; only 5 is verified",
+          "enum": [
+            5
+          ],
+          "in": "query",
+          "name": "group_quantity",
+          "type": "integer",
+          "x-example": 5
+        },
+        {
+          "description": "Period selector; 0 means the whole game",
+          "in": "query",
+          "name": "period",
+          "type": "integer",
+          "x-example": 0
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-lineups": {
+      "id": "nba-lineups",
+      "method": "GET",
+      "path": "/nba/lineups",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "group_quantity",
+          "in": "query",
+          "type": "integer",
+          "enum": [
+            "5"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Statistic family",
+          "enum": [
+            "Base"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Lineup size; only 5 is verified",
+          "enum": [
+            5
+          ],
+          "in": "query",
+          "name": "group_quantity",
+          "type": "integer",
+          "x-example": 5
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-news": {
+      "id": "nba-news",
+      "method": "GET",
+      "path": "/nba/news",
+      "pathParams": [],
+      "queryParams": [],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-opp-pt-shot": {
+      "id": "nba-opp-pt-shot",
+      "method": "GET",
+      "path": "/nba/opp-pt-shot",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional aggregation.",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-play-by-play": {
+      "id": "nba-play-by-play",
+      "method": "GET",
+      "path": "/nba/play-by-play",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "game_id",
+          "in": "query",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "start_period",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "end_period",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ten-digit game id from nba-scoreboard",
+          "in": "query",
+          "name": "game_id",
+          "required": true,
+          "type": "string",
+          "x-example": "0022600196"
+        },
+        {
+          "description": "First period to include, 0 to 14; 0 means from the start example(0)",
+          "in": "query",
+          "name": "start_period",
+          "type": "integer",
+          "x-example": 0
+        },
+        {
+          "description": "Last period to include, 0 to 14; 0 means through the end example(14)",
+          "in": "query",
+          "name": "end_period",
+          "type": "integer",
+          "x-example": 14
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-awards": {
+      "id": "nba-player-awards",
+      "method": "GET",
+      "path": "/nba/player-awards",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-bio-stats": {
+      "id": "nba-player-bio-stats",
+      "method": "GET",
+      "path": "/nba/player-bio-stats",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-career-stats": {
+      "id": "nba-player-career-stats",
+      "method": "GET",
+      "path": "/nba/player-career-stats",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "Aggregation; PerGame or Totals",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-clutch": {
+      "id": "nba-player-clutch",
+      "method": "GET",
+      "path": "/nba/player-clutch",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        },
+        {
+          "name": "clutch_time",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Last 5 Minutes"
+          ]
+        },
+        {
+          "name": "ahead_behind",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Ahead or Behind"
+          ]
+        },
+        {
+          "name": "point_diff",
+          "in": "query",
+          "type": "integer",
+          "enum": [
+            "5"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional aggregation.",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string"
+        },
+        {
+          "description": "Optional statistic family.",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional clutch window; only 'Last 5 Minutes' is verified.",
+          "enum": [
+            "Last 5 Minutes"
+          ],
+          "in": "query",
+          "name": "clutch_time",
+          "type": "string"
+        },
+        {
+          "description": "Optional score-margin filter; only 'Ahead or Behind' is verified.",
+          "enum": [
+            "Ahead or Behind"
+          ],
+          "in": "query",
+          "name": "ahead_behind",
+          "type": "string"
+        },
+        {
+          "description": "Optional point margin; only 5 is verified.",
+          "enum": [
+            5
+          ],
+          "in": "query",
+          "name": "point_diff",
+          "type": "integer"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-compare": {
+      "id": "nba-player-compare",
+      "method": "GET",
+      "path": "/nba/player-compare",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_ids",
+          "in": "query",
+          "collectionFormat": "multi",
+          "type": "array",
+          "required": true
+        },
+        {
+          "name": "vs_player_ids",
+          "in": "query",
+          "collectionFormat": "multi",
+          "type": "array",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "collectionFormat": "multi",
+          "description": "Player ids for the left side; repeated or comma-separated",
+          "in": "query",
+          "items": {
+            "type": "string"
+          },
+          "name": "player_ids",
+          "required": true,
+          "type": "array",
+          "x-example": "1628398"
+        },
+        {
+          "collectionFormat": "multi",
+          "description": "Player ids for the right side; repeated or comma-separated",
+          "in": "query",
+          "items": {
+            "type": "string"
+          },
+          "name": "vs_player_ids",
+          "required": true,
+          "type": "array",
+          "x-example": "2544"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Statistic family; required upstream",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-dash-by-clutch": {
+      "id": "nba-player-dash-by-clutch",
+      "method": "GET",
+      "path": "/nba/player-dash-by-clutch",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Statistic family; required upstream",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-dash-by-game-splits": {
+      "id": "nba-player-dash-by-game-splits",
+      "method": "GET",
+      "path": "/nba/player-dash-by-game-splits",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Statistic family; required upstream",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-dash-by-last-n-games": {
+      "id": "nba-player-dash-by-last-n-games",
+      "method": "GET",
+      "path": "/nba/player-dash-by-last-n-games",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Statistic family; required upstream",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-dash-by-opponent": {
+      "id": "nba-player-dash-by-opponent",
+      "method": "GET",
+      "path": "/nba/player-dash-by-opponent",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Statistic family; required upstream",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-dash-pt-pass": {
+      "id": "nba-player-dash-pt-pass",
+      "method": "GET",
+      "path": "/nba/player-dash-pt-pass",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-dash-pt-reb": {
+      "id": "nba-player-dash-pt-reb",
+      "method": "GET",
+      "path": "/nba/player-dash-pt-reb",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-dash-pt-shots": {
+      "id": "nba-player-dash-pt-shots",
+      "method": "GET",
+      "path": "/nba/player-dash-pt-shots",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-game-logs": {
+      "id": "nba-player-game-logs",
+      "method": "GET",
+      "path": "/nba/player-game-logs",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Required player id from nba-players or nba-team-roster.",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-info": {
+      "id": "nba-player-info",
+      "method": "GET",
+      "path": "/nba/player-info",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players or nba-team-roster",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-profile-v2": {
+      "id": "nba-player-profile-v2",
+      "method": "GET",
+      "path": "/nba/player-profile-v2",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Required player id from nba-players or nba-team-roster.",
+          "in": "query",
+          "name": "player_id",
+          "required": true,
+          "type": "integer"
+        },
+        {
+          "description": "Optional aggregation.",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-pt-shot": {
+      "id": "nba-player-pt-shot",
+      "method": "GET",
+      "path": "/nba/player-pt-shot",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional aggregation.",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-stats": {
+      "id": "nba-player-stats",
+      "method": "GET",
+      "path": "/nba/player-stats",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type; Regular Season or Playoffs",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Statistic family; Base or Advanced",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        },
+        {
+          "description": "Aggregation; PerGame or Totals",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-player-streak-finder": {
+      "id": "nba-player-streak-finder",
+      "method": "GET",
+      "path": "/nba/player-streak-finder",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "min_games",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional player id from nba-players; narrows the streaks to one player.",
+          "in": "query",
+          "name": "player_id",
+          "type": "integer"
+        },
+        {
+          "description": "Optional minimum streak length in games.",
+          "in": "query",
+          "name": "min_games",
+          "type": "integer"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-players": {
+      "id": "nba-players",
+      "method": "GET",
+      "path": "/nba/players",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "active",
+          "in": "query",
+          "type": "boolean"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Optional team id from nba-standings; narrows the index to that roster example(1610612741)",
+          "in": "query",
+          "name": "team_id",
+          "type": "integer",
+          "x-example": 1610612741
+        },
+        {
+          "description": "When true, keep only players active in the season",
+          "in": "query",
+          "name": "active",
+          "type": "boolean"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-playoff-picture": {
+      "id": "nba-playoff-picture",
+      "method": "GET",
+      "path": "/nba/playoff-picture",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season_id",
+          "in": "query",
+          "type": "string"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Five-digit season id such as 22026; defaults to the current season",
+          "in": "query",
+          "name": "season_id",
+          "type": "string",
+          "x-example": "22026"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-playoff-series": {
+      "id": "nba-playoff-series",
+      "method": "GET",
+      "path": "/nba/playoff-series",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-pt-defend": {
+      "id": "nba-pt-defend",
+      "method": "GET",
+      "path": "/nba/pt-defend",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "defense_category",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Overall",
+            "3 Pointers"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Defended-shot category",
+          "enum": [
+            "Overall",
+            "3 Pointers"
+          ],
+          "in": "query",
+          "name": "defense_category",
+          "type": "string",
+          "x-example": "Overall"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-pt-stats": {
+      "id": "nba-pt-stats",
+      "method": "GET",
+      "path": "/nba/pt-stats",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "pt_measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "SpeedDistance"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Tracking measure; only SpeedDistance is verified",
+          "enum": [
+            "SpeedDistance"
+          ],
+          "in": "query",
+          "name": "pt_measure_type",
+          "type": "string",
+          "x-example": "SpeedDistance"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-scoreboard": {
+      "id": "nba-scoreboard",
+      "method": "GET",
+      "path": "/nba/scoreboard",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "game_date",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "day_offset",
+          "in": "query",
+          "type": "integer"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Game day in MM/DD/YYYY form; defaults to the current UTC date",
+          "in": "query",
+          "name": "game_date",
+          "type": "string",
+          "x-example": "11/08/2026"
+        },
+        {
+          "description": "Whole-day offset applied to the game day example(0)",
+          "in": "query",
+          "name": "day_offset",
+          "type": "integer",
+          "x-example": 0
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-shot-chart": {
+      "id": "nba-shot-chart",
+      "method": "GET",
+      "path": "/nba/shot-chart",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "player_id",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer"
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "context_measure",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "FGA",
+            "FG_PCT"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Player id from nba-players; supply this or team_id",
+          "in": "query",
+          "name": "player_id",
+          "type": "integer",
+          "x-example": 1628398
+        },
+        {
+          "description": "Team id from nba-standings; supply this or player_id",
+          "in": "query",
+          "name": "team_id",
+          "type": "integer"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Shot-chart base event",
+          "enum": [
+            "FGA",
+            "FG_PCT"
+          ],
+          "in": "query",
+          "name": "context_measure",
+          "type": "string",
+          "x-example": "FGA"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-standings": {
+      "id": "nba-standings",
+      "method": "GET",
+      "path": "/nba/standings",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type; Regular Season or Playoffs",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-synergy-play-types": {
+      "id": "nba-synergy-play-types",
+      "method": "GET",
+      "path": "/nba/synergy-play-types",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season_year",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "play_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Isolation"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "player_or_team",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "T"
+          ]
+        },
+        {
+          "name": "type_grouping",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "offensive"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Four-digit season year such as 2026; defaults to the current season",
+          "in": "query",
+          "name": "season_year",
+          "type": "string",
+          "x-example": "2026"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Synergy play type; only Isolation is verified",
+          "enum": [
+            "Isolation"
+          ],
+          "in": "query",
+          "name": "play_type",
+          "type": "string",
+          "x-example": "Isolation"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Subject",
+          "enum": [
+            "T"
+          ],
+          "in": "query",
+          "name": "player_or_team",
+          "type": "string",
+          "x-example": "T"
+        },
+        {
+          "description": "Grouping",
+          "enum": [
+            "offensive"
+          ],
+          "in": "query",
+          "name": "type_grouping",
+          "type": "string",
+          "x-example": "offensive"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-dash-by-clutch": {
+      "id": "nba-team-dash-by-clutch",
+      "method": "GET",
+      "path": "/nba/team-dash-by-clutch",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Team id from nba-standings",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1610612738
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Statistic family; required upstream",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-dash-by-game-splits": {
+      "id": "nba-team-dash-by-game-splits",
+      "method": "GET",
+      "path": "/nba/team-dash-by-game-splits",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Team id from nba-standings",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1610612738
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Statistic family; required upstream",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-dash-by-last-n-games": {
+      "id": "nba-team-dash-by-last-n-games",
+      "method": "GET",
+      "path": "/nba/team-dash-by-last-n-games",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Team id from nba-standings",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1610612738
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Statistic family; required upstream",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-dash-by-opponent": {
+      "id": "nba-team-dash-by-opponent",
+      "method": "GET",
+      "path": "/nba/team-dash-by-opponent",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Team id from nba-standings",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1610612738
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Statistic family; required upstream",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-dash-pt-pass": {
+      "id": "nba-team-dash-pt-pass",
+      "method": "GET",
+      "path": "/nba/team-dash-pt-pass",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        },
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional aggregation.",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string"
+        },
+        {
+          "description": "Required team id from nba-standings.",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-dash-pt-reb": {
+      "id": "nba-team-dash-pt-reb",
+      "method": "GET",
+      "path": "/nba/team-dash-pt-reb",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Team id from nba-standings",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1610612738
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-dash-pt-shots": {
+      "id": "nba-team-dash-pt-shots",
+      "method": "GET",
+      "path": "/nba/team-dash-pt-shots",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        },
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional aggregation.",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string"
+        },
+        {
+          "description": "Required team id from nba-standings.",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-details": {
+      "id": "nba-team-details",
+      "method": "GET",
+      "path": "/nba/team-details",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Team id from nba-standings",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1610612741
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-game-logs": {
+      "id": "nba-team-game-logs",
+      "method": "GET",
+      "path": "/nba/team-game-logs",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Required team id from nba-standings.",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-info-common": {
+      "id": "nba-team-info-common",
+      "method": "GET",
+      "path": "/nba/team-info-common",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Required team id from nba-standings.",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-on-off": {
+      "id": "nba-team-on-off",
+      "method": "GET",
+      "path": "/nba/team-on-off",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        },
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional aggregation.",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string"
+        },
+        {
+          "description": "Optional statistic family.",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string"
+        },
+        {
+          "description": "Required team id from nba-standings.",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-pt-shot": {
+      "id": "nba-team-pt-shot",
+      "method": "GET",
+      "path": "/nba/team-pt-shot",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        },
+        {
+          "description": "Optional season in YYYY-YY form; defaults to the current NBA season.",
+          "in": "query",
+          "name": "season",
+          "type": "string"
+        },
+        {
+          "description": "Optional season type.",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string"
+        },
+        {
+          "description": "Optional aggregation.",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-roster": {
+      "id": "nba-team-roster",
+      "method": "GET",
+      "path": "/nba/team-roster",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "team_id",
+          "in": "query",
+          "type": "integer",
+          "required": true
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Team id from nba-standings",
+          "in": "query",
+          "name": "team_id",
+          "required": true,
+          "type": "integer",
+          "x-example": 1610612741
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-shot-locations": {
+      "id": "nba-team-shot-locations",
+      "method": "GET",
+      "path": "/nba/team-shot-locations",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame"
+          ]
+        },
+        {
+          "name": "distance_range",
+          "in": "query",
+          "type": "string"
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type",
+          "enum": [
+            "Regular Season"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Statistic family",
+          "enum": [
+            "Base"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        },
+        {
+          "description": "Aggregation",
+          "enum": [
+            "PerGame"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Distance bucket set; only By Zone is verified",
+          "in": "query",
+          "name": "distance_range",
+          "type": "string",
+          "x-example": "By Zone"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-stats": {
+      "id": "nba-team-stats",
+      "method": "GET",
+      "path": "/nba/team-stats",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "measure_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type; Regular Season or Playoffs",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Statistic family; Base or Advanced",
+          "enum": [
+            "Base",
+            "Advanced",
+            "Misc",
+            "Scoring",
+            "Defense",
+            "Opponent"
+          ],
+          "in": "query",
+          "name": "measure_type",
+          "type": "string",
+          "x-example": "Base"
+        },
+        {
+          "description": "Aggregation; PerGame or Totals",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-stats-leaders": {
+      "id": "nba-team-stats-leaders",
+      "method": "GET",
+      "path": "/nba/team-stats-leaders",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "stat_category",
+          "in": "query",
+          "type": "string",
+          "required": true,
+          "enum": [
+            "PTS",
+            "REB",
+            "AST",
+            "BLK",
+            "STL",
+            "TOV"
+          ]
+        },
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        },
+        {
+          "name": "season",
+          "in": "query",
+          "type": "string"
+        },
+        {
+          "name": "season_type",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ]
+        },
+        {
+          "name": "per_mode",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ]
+        },
+        {
+          "name": "scope",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "S"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Ranked statistic; PTS, REB or AST",
+          "enum": [
+            "PTS",
+            "REB",
+            "AST",
+            "BLK",
+            "STL",
+            "TOV"
+          ],
+          "in": "query",
+          "name": "stat_category",
+          "required": true,
+          "type": "string",
+          "x-example": "PTS"
+        },
+        {
+          "description": "League id; only 00 (NBA) is verified",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string",
+          "x-example": "00"
+        },
+        {
+          "description": "Season in YYYY-YY form; defaults to the current NBA season",
+          "in": "query",
+          "name": "season",
+          "type": "string",
+          "x-example": "2026-27"
+        },
+        {
+          "description": "Season type; Regular Season or Playoffs",
+          "enum": [
+            "Regular Season",
+            "Playoffs",
+            "Pre Season",
+            "All Star"
+          ],
+          "in": "query",
+          "name": "season_type",
+          "type": "string",
+          "x-example": "Regular Season"
+        },
+        {
+          "description": "Aggregation; PerGame or Totals",
+          "enum": [
+            "PerGame",
+            "Totals",
+            "Per36",
+            "Per48",
+            "Per100Possessions",
+            "MinutesPer",
+            "PerPossession"
+          ],
+          "in": "query",
+          "name": "per_mode",
+          "type": "string",
+          "x-example": "PerGame"
+        },
+        {
+          "description": "Player-pool scope; S is all players (the only verified value)",
+          "enum": [
+            "S"
+          ],
+          "in": "query",
+          "name": "scope",
+          "type": "string",
+          "x-example": "S"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    },
+    "nba-team-years": {
+      "id": "nba-team-years",
+      "method": "GET",
+      "path": "/nba/team-years",
+      "pathParams": [],
+      "queryParams": [
+        {
+          "name": "league_id",
+          "in": "query",
+          "type": "string",
+          "enum": [
+            "00"
+          ]
+        }
+      ],
+      "bodyParam": null,
+      "bodyRequired": false,
+      "params": [
+        {
+          "description": "Optional league id; only 00 (NBA) is verified.",
+          "enum": [
+            "00"
+          ],
+          "in": "query",
+          "name": "league_id",
+          "type": "string"
+        }
+      ],
+      "produces": [
+        "application/json"
+      ],
+      "security": [
+        "ApiKeyAuth"
+      ]
+    }
+  }
+}
