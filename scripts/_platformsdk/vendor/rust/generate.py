@@ -426,10 +426,37 @@ def render_services(model: core.Model, names: dict[str, str]) -> str:
         for method_name, operation_id in methods.items():
             meta = model.meta[operation_id]
             params_type = type_names[operation_id]
+            signature = (
+                f"    pub async fn {method_name}(&self, params: {params_type}) "
+                "-> Result<ApiResponse, Error> {"
+            )
+            call = (
+                f"self.inner.call({rust_string(operation_id)}, &params, "
+                "RequestOptions::default()).await"
+            )
+            if len(signature) > 100:
+                signature = (
+                    f"    pub async fn {method_name}(\n"
+                    "        &self,\n"
+                    f"        params: {params_type},\n"
+                    "    ) -> Result<ApiResponse, Error> {"
+                )
+            if len("        " + call) > 100:
+                body = [
+                    "        self.inner",
+                    "            .call(",
+                    f"                {rust_string(operation_id)},",
+                    "                &params,",
+                    "                RequestOptions::default(),",
+                    "            )",
+                    "            .await",
+                ]
+            else:
+                body = ["        " + call]
             output.extend(
                 [
-                    f"    pub async fn {method_name}(&self, params: {params_type}) -> Result<ApiResponse, Error> {{",
-                    f"        self.inner.call({rust_string(operation_id)}, &params, RequestOptions::default()).await",
+                    signature,
+                    *body,
                     "    }",
                     "",
                 ]

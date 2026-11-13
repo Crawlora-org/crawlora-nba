@@ -52,7 +52,7 @@ class ClientTest {
             assertInstanceOf(Map.class, result);
             assertEquals("test-key", seenKey.get());
             assertTrue(seenUri.get().startsWith("/api/v1/"));
-            assertTrue(seenUri.get().contains("%26"), "query values should be URL encoded");
+{{query_encoding_assertion}}
 {{path_encoding_assertion}}
         }
     }

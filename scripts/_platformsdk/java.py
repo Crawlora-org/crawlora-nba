@@ -204,6 +204,11 @@ def emit(root: Path, config: dict, spec: dict, assets: Path) -> None:
         if any(param.get("in") == "path" for param in test_operation["params"])
         else "            // This operation has no path parameters to encode."
     )
+    values["query_encoding_assertion"] = (
+        '            assertTrue(seenUri.get().contains("%26"), "query values should be URL encoded");'
+        if any(param.get("in") == "query" for param in test_operation["params"])
+        else "            // This operation has no query parameters to encode."
+    )
     aliases = {op_id: method for group in model.groups.values() for method, op_id in group.items()}
     java_example = _JAVA_EXAMPLE_CALLS.get(platform)
     if java_example:

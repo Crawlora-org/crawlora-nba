@@ -80,6 +80,12 @@ def _raw_spec(platform: str, *, extra: bool = False) -> dict:
         "modrinth": [("statistics", "statistics"), ("search", "search")],
         "openligadb": [("leagues", "leagues"), ("sports", "sports"), ("result-types", "result-types")],
         "speedrun": [("games", "games")],
+        "fortnite": [("genres", "genres"), ("islands", "islands")],
+        "lichess": [("enums", "enums"), ("puzzle-daily", "puzzle/daily")],
+        "liquipedia": [("wikis", "wikis"), ("search", "search")],
+        "chesscom": [("puzzle", "puzzle"), ("puzzle-random", "puzzle/random")],
+        "nba": [("games", "games"), ("standings", "standings")],
+        "faceit": [("games", "games"), ("leaderboard", "leaderboard")],
         "amazon": [("search", "search"), ("product", "product")],
         "imdb": [("search", "search"), ("charts", "charts")],
         "google": [("news", "news"), ("suggest", "suggest")],
@@ -101,6 +107,7 @@ def _raw_spec(platform: str, *, extra: bool = False) -> dict:
             "dramabox", "wallapop", "jumia", "cardmarket", "fanduel", "fussballde",
             "opendota", "cricbuzz", "gosugamers", "lolesports", "vlr", "bo3",
             "modrinth", "openligadb", "speedrun",
+            "fortnite", "lichess", "liquipedia", "chesscom", "nba", "faceit",
         }:
             operation["parameters"] = [
                 {"name": "q", "in": "query", "type": "string", "required": False},

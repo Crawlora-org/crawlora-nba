@@ -880,43 +880,73 @@ impl NbaApi {
         self.inner.call("nba-box-score", &params, RequestOptions::default()).await
     }
 
-    pub async fn box_score_advanced(&self, params: NbaBoxScoreAdvancedParams) -> Result<ApiResponse, Error> {
+    pub async fn box_score_advanced(
+        &self,
+        params: NbaBoxScoreAdvancedParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-box-score-advanced", &params, RequestOptions::default()).await
     }
 
-    pub async fn box_score_defensive(&self, params: NbaBoxScoreDefensiveParams) -> Result<ApiResponse, Error> {
+    pub async fn box_score_defensive(
+        &self,
+        params: NbaBoxScoreDefensiveParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-box-score-defensive", &params, RequestOptions::default()).await
     }
 
-    pub async fn box_score_four_factors(&self, params: NbaBoxScoreFourFactorsParams) -> Result<ApiResponse, Error> {
+    pub async fn box_score_four_factors(
+        &self,
+        params: NbaBoxScoreFourFactorsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-box-score-four-factors", &params, RequestOptions::default()).await
     }
 
-    pub async fn box_score_misc(&self, params: NbaBoxScoreMiscParams) -> Result<ApiResponse, Error> {
+    pub async fn box_score_misc(
+        &self,
+        params: NbaBoxScoreMiscParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-box-score-misc", &params, RequestOptions::default()).await
     }
 
-    pub async fn box_score_player_track(&self, params: NbaBoxScorePlayerTrackParams) -> Result<ApiResponse, Error> {
+    pub async fn box_score_player_track(
+        &self,
+        params: NbaBoxScorePlayerTrackParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-box-score-player-track", &params, RequestOptions::default()).await
     }
 
-    pub async fn box_score_scoring(&self, params: NbaBoxScoreScoringParams) -> Result<ApiResponse, Error> {
+    pub async fn box_score_scoring(
+        &self,
+        params: NbaBoxScoreScoringParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-box-score-scoring", &params, RequestOptions::default()).await
     }
 
-    pub async fn box_score_summary(&self, params: NbaBoxScoreSummaryParams) -> Result<ApiResponse, Error> {
+    pub async fn box_score_summary(
+        &self,
+        params: NbaBoxScoreSummaryParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-box-score-summary", &params, RequestOptions::default()).await
     }
 
-    pub async fn box_score_usage(&self, params: NbaBoxScoreUsageParams) -> Result<ApiResponse, Error> {
+    pub async fn box_score_usage(
+        &self,
+        params: NbaBoxScoreUsageParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-box-score-usage", &params, RequestOptions::default()).await
     }
 
-    pub async fn common_all_players(&self, params: NbaCommonAllPlayersParams) -> Result<ApiResponse, Error> {
+    pub async fn common_all_players(
+        &self,
+        params: NbaCommonAllPlayersParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-common-all-players", &params, RequestOptions::default()).await
     }
 
-    pub async fn draft_combine_anthro(&self, params: NbaDraftCombineAnthroParams) -> Result<ApiResponse, Error> {
+    pub async fn draft_combine_anthro(
+        &self,
+        params: NbaDraftCombineAnthroParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-draft-combine-anthro", &params, RequestOptions::default()).await
     }
 
@@ -924,7 +954,10 @@ impl NbaApi {
         self.inner.call("nba-enums", &params, RequestOptions::default()).await
     }
 
-    pub async fn franchise_history(&self, params: NbaFranchiseHistoryParams) -> Result<ApiResponse, Error> {
+    pub async fn franchise_history(
+        &self,
+        params: NbaFranchiseHistoryParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-franchise-history", &params, RequestOptions::default()).await
     }
 
@@ -936,7 +969,10 @@ impl NbaApi {
         self.inner.call("nba-games", &params, RequestOptions::default()).await
     }
 
-    pub async fn homepage_leaders(&self, params: NbaHomepageLeadersParams) -> Result<ApiResponse, Error> {
+    pub async fn homepage_leaders(
+        &self,
+        params: NbaHomepageLeadersParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-homepage-leaders", &params, RequestOptions::default()).await
     }
 
@@ -956,11 +992,17 @@ impl NbaApi {
         self.inner.call("nba-hustle-team", &params, RequestOptions::default()).await
     }
 
-    pub async fn league_game_log(&self, params: NbaLeagueGameLogParams) -> Result<ApiResponse, Error> {
+    pub async fn league_game_log(
+        &self,
+        params: NbaLeagueGameLogParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-league-game-log", &params, RequestOptions::default()).await
     }
 
-    pub async fn lineup_shot_chart(&self, params: NbaLineupShotChartParams) -> Result<ApiResponse, Error> {
+    pub async fn lineup_shot_chart(
+        &self,
+        params: NbaLineupShotChartParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-lineup-shot-chart", &params, RequestOptions::default()).await
     }
 
@@ -984,11 +1026,17 @@ impl NbaApi {
         self.inner.call("nba-player-awards", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_bio_stats(&self, params: NbaPlayerBioStatsParams) -> Result<ApiResponse, Error> {
+    pub async fn player_bio_stats(
+        &self,
+        params: NbaPlayerBioStatsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-bio-stats", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_career_stats(&self, params: NbaPlayerCareerStatsParams) -> Result<ApiResponse, Error> {
+    pub async fn player_career_stats(
+        &self,
+        params: NbaPlayerCareerStatsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-career-stats", &params, RequestOptions::default()).await
     }
 
@@ -996,39 +1044,66 @@ impl NbaApi {
         self.inner.call("nba-player-clutch", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_compare(&self, params: NbaPlayerCompareParams) -> Result<ApiResponse, Error> {
+    pub async fn player_compare(
+        &self,
+        params: NbaPlayerCompareParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-compare", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_dash_by_clutch(&self, params: NbaPlayerDashByClutchParams) -> Result<ApiResponse, Error> {
+    pub async fn player_dash_by_clutch(
+        &self,
+        params: NbaPlayerDashByClutchParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-dash-by-clutch", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_dash_by_game_splits(&self, params: NbaPlayerDashByGameSplitsParams) -> Result<ApiResponse, Error> {
+    pub async fn player_dash_by_game_splits(
+        &self,
+        params: NbaPlayerDashByGameSplitsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-dash-by-game-splits", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_dash_by_last_n_games(&self, params: NbaPlayerDashByLastNgamesParams) -> Result<ApiResponse, Error> {
+    pub async fn player_dash_by_last_n_games(
+        &self,
+        params: NbaPlayerDashByLastNgamesParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-dash-by-last-n-games", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_dash_by_opponent(&self, params: NbaPlayerDashByOpponentParams) -> Result<ApiResponse, Error> {
+    pub async fn player_dash_by_opponent(
+        &self,
+        params: NbaPlayerDashByOpponentParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-dash-by-opponent", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_dash_pt_pass(&self, params: NbaPlayerDashPtPassParams) -> Result<ApiResponse, Error> {
+    pub async fn player_dash_pt_pass(
+        &self,
+        params: NbaPlayerDashPtPassParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-dash-pt-pass", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_dash_pt_reb(&self, params: NbaPlayerDashPtRebParams) -> Result<ApiResponse, Error> {
+    pub async fn player_dash_pt_reb(
+        &self,
+        params: NbaPlayerDashPtRebParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-dash-pt-reb", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_dash_pt_shots(&self, params: NbaPlayerDashPtShotsParams) -> Result<ApiResponse, Error> {
+    pub async fn player_dash_pt_shots(
+        &self,
+        params: NbaPlayerDashPtShotsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-dash-pt-shots", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_game_logs(&self, params: NbaPlayerGameLogsParams) -> Result<ApiResponse, Error> {
+    pub async fn player_game_logs(
+        &self,
+        params: NbaPlayerGameLogsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-game-logs", &params, RequestOptions::default()).await
     }
 
@@ -1036,11 +1111,17 @@ impl NbaApi {
         self.inner.call("nba-player-info", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_profile_v2(&self, params: NbaPlayerProfileV2Params) -> Result<ApiResponse, Error> {
+    pub async fn player_profile_v2(
+        &self,
+        params: NbaPlayerProfileV2Params,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-profile-v2", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_pt_shot(&self, params: NbaPlayerPtShotParams) -> Result<ApiResponse, Error> {
+    pub async fn player_pt_shot(
+        &self,
+        params: NbaPlayerPtShotParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-pt-shot", &params, RequestOptions::default()).await
     }
 
@@ -1048,7 +1129,10 @@ impl NbaApi {
         self.inner.call("nba-player-stats", &params, RequestOptions::default()).await
     }
 
-    pub async fn player_streak_finder(&self, params: NbaPlayerStreakFinderParams) -> Result<ApiResponse, Error> {
+    pub async fn player_streak_finder(
+        &self,
+        params: NbaPlayerStreakFinderParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-player-streak-finder", &params, RequestOptions::default()).await
     }
 
@@ -1056,11 +1140,17 @@ impl NbaApi {
         self.inner.call("nba-players", &params, RequestOptions::default()).await
     }
 
-    pub async fn playoff_picture(&self, params: NbaPlayoffPictureParams) -> Result<ApiResponse, Error> {
+    pub async fn playoff_picture(
+        &self,
+        params: NbaPlayoffPictureParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-playoff-picture", &params, RequestOptions::default()).await
     }
 
-    pub async fn playoff_series(&self, params: NbaPlayoffSeriesParams) -> Result<ApiResponse, Error> {
+    pub async fn playoff_series(
+        &self,
+        params: NbaPlayoffSeriesParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-playoff-series", &params, RequestOptions::default()).await
     }
 
@@ -1084,35 +1174,59 @@ impl NbaApi {
         self.inner.call("nba-standings", &params, RequestOptions::default()).await
     }
 
-    pub async fn synergy_play_types(&self, params: NbaSynergyPlayTypesParams) -> Result<ApiResponse, Error> {
+    pub async fn synergy_play_types(
+        &self,
+        params: NbaSynergyPlayTypesParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-synergy-play-types", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_dash_by_clutch(&self, params: NbaTeamDashByClutchParams) -> Result<ApiResponse, Error> {
+    pub async fn team_dash_by_clutch(
+        &self,
+        params: NbaTeamDashByClutchParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-dash-by-clutch", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_dash_by_game_splits(&self, params: NbaTeamDashByGameSplitsParams) -> Result<ApiResponse, Error> {
+    pub async fn team_dash_by_game_splits(
+        &self,
+        params: NbaTeamDashByGameSplitsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-dash-by-game-splits", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_dash_by_last_n_games(&self, params: NbaTeamDashByLastNgamesParams) -> Result<ApiResponse, Error> {
+    pub async fn team_dash_by_last_n_games(
+        &self,
+        params: NbaTeamDashByLastNgamesParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-dash-by-last-n-games", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_dash_by_opponent(&self, params: NbaTeamDashByOpponentParams) -> Result<ApiResponse, Error> {
+    pub async fn team_dash_by_opponent(
+        &self,
+        params: NbaTeamDashByOpponentParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-dash-by-opponent", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_dash_pt_pass(&self, params: NbaTeamDashPtPassParams) -> Result<ApiResponse, Error> {
+    pub async fn team_dash_pt_pass(
+        &self,
+        params: NbaTeamDashPtPassParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-dash-pt-pass", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_dash_pt_reb(&self, params: NbaTeamDashPtRebParams) -> Result<ApiResponse, Error> {
+    pub async fn team_dash_pt_reb(
+        &self,
+        params: NbaTeamDashPtRebParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-dash-pt-reb", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_dash_pt_shots(&self, params: NbaTeamDashPtShotsParams) -> Result<ApiResponse, Error> {
+    pub async fn team_dash_pt_shots(
+        &self,
+        params: NbaTeamDashPtShotsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-dash-pt-shots", &params, RequestOptions::default()).await
     }
 
@@ -1120,11 +1234,17 @@ impl NbaApi {
         self.inner.call("nba-team-details", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_game_logs(&self, params: NbaTeamGameLogsParams) -> Result<ApiResponse, Error> {
+    pub async fn team_game_logs(
+        &self,
+        params: NbaTeamGameLogsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-game-logs", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_info_common(&self, params: NbaTeamInfoCommonParams) -> Result<ApiResponse, Error> {
+    pub async fn team_info_common(
+        &self,
+        params: NbaTeamInfoCommonParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-info-common", &params, RequestOptions::default()).await
     }
 
@@ -1140,7 +1260,10 @@ impl NbaApi {
         self.inner.call("nba-team-roster", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_shot_locations(&self, params: NbaTeamShotLocationsParams) -> Result<ApiResponse, Error> {
+    pub async fn team_shot_locations(
+        &self,
+        params: NbaTeamShotLocationsParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-shot-locations", &params, RequestOptions::default()).await
     }
 
@@ -1148,7 +1271,10 @@ impl NbaApi {
         self.inner.call("nba-team-stats", &params, RequestOptions::default()).await
     }
 
-    pub async fn team_stats_leaders(&self, params: NbaTeamStatsLeadersParams) -> Result<ApiResponse, Error> {
+    pub async fn team_stats_leaders(
+        &self,
+        params: NbaTeamStatsLeadersParams,
+    ) -> Result<ApiResponse, Error> {
         self.inner.call("nba-team-stats-leaders", &params, RequestOptions::default()).await
     }
 
